@@ -134,6 +134,9 @@ html, body {
 	#left {
 		top: 60px;
 	}
+	#content {
+		padding-bottom: 1px;
+	}
 	#avatar {
 		width: 120px;
 		height: 120px;
