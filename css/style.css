@@ -91,6 +91,9 @@ html, body {
 	line-height: 1.5;
 	color: #57606a;
 }
+#content .block .block-description h3 {
+	color: black;
+}
 #content .block .block-description {
 	line-height: 1.8;
 }
