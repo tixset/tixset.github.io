@@ -111,7 +111,8 @@ function connect(reConn) {
 	if (!reConn) {
 		get('chat').innerHTML = "";
 	}
-	ws = new WebSocket("ws://" + soketHost + ":" + soketPort); // Подключаемся к серверу
+	var protocol = window.location.protocol == 'https:' ? 'wss' : 'ws';
+	ws = new WebSocket(protocol + "://" + soketHost + ":" + soketPort); // Подключаемся к серверу
 	ws.onopen = function(evt) { // Успешно подключились
 		addToChat('n', "Соединение установлено.");
 		mainRoom = get('room').value;
