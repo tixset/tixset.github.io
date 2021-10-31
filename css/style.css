@@ -62,12 +62,21 @@ html, body {
 	margin-top: 20px;
 }
 #location {
+	margin-top: 20px;
+}
+#email {
+	margin-top: 10px;
+}
+#email a {
+	text-decoration: none;
+	color: black;
+}
+#location, #email {
 	font-size: 14px;
 	white-space: nowrap;
 	text-align: -webkit-match-parent;
-	margin-top: 20px;
 }
-#location svg {
+#location svg ,#email svg {
 	margin-bottom: -3px;
 	color: #57606a;
 	fill: currentColor;
