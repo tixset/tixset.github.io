@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tixset - GitHub</title>
+<meta name="viewport" content="width=device-width" />
+<meta name="author" content="Zelenov Anton" />
+<meta name="description" content="Приветствую Вас на моей страничке GitHub!" /> 
+<meta name="Keywords" content="GitHub, tixset, Zelenov Anton, Russia, Serpukhov" /> 
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="header">
+<a href="https://github.com/tixset">
+<svg id="logo" height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true">
+<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+</a>
+</div>
+<div id="left">
+<a href="https://github.com/tixset"><img id="avatar" alt="Zelenov Anton" src="img/avatar.jfif"></a>
+<div id="name">Zelenov Anton</div>
+<div id="nickname">tixset</div>
+<div id="description">
+Увлекаюсь разработкой разного рода интерфейсов управления и скриптов под linux / I am fond of developing all kinds of control interfaces and scripts for linux</div>
+<div id="location">
+<svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.536 3.464a5 5 0 010 7.072L8 14.07l-3.536-3.535a5 5 0 117.072-7.072v.001zm1.06 8.132a6.5 6.5 0 10-9.192 0l3.535 3.536a1.5 1.5 0 002.122 0l3.535-3.536zM8 9a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+Russia, Serpukhov
+</div>
+</div>
+<div id="content">
+<div id="welcome">Приветствую Вас на моей страничке GitHub! /<br>Welcome to my GitHub page!</div>
+<div class="block">
+<div class="block-caption"><a href="https://github.com/tixset/encryptionWebChat">encryptionWebChat</a></div>
+<div class="block-description">
+<h3>Шифрованный Анонимный Веб-Чат / Encrypted Anonymous Web-Chat</h3>
+<p>Для демонстрации работы шифрования Виженера и протокола обмена ключами Диффи-Хеллмана решил написать простенький веб-чатик с сервером на сокете.</p>
+<p>Чат решено было сделать как можно более анонимным, для этого я отказался от бэкенда и решил в качестве сервера использовать сокет.</p>
+<p>Имя пользователя для чата генерится рандомно, его можно сменить в дальнейшем на такое-же рандомное, для авторизации в чате достаточно только имени и названия комнаты.</p>
+<p>Серверный скрипт не записывает ни куда ни какие данные, данные в нем хранятся непосредственно в переменных.</p>
+<p>При этом в переменных хранятся только хэши коннектов и список комнат.</p>
+<p>В чате шифруются, с помощью шифрования Виженера только сообщения, системные команды, например команда перехода в комнату - не шифруются.</p>
+<a class="details" href="https://github.com/tixset/encryptionWebChat">Подробнее / details</a>
+</div>
+</div>
+<div class="block">
+<div class="block-caption"><a href="https://github.com/tixset/DiffieHellmanProtocol">DiffieHellmanProtocol</a></div>
+<div class="block-description">
+<h3>Пример работы протокола Диффи — Хеллмана на нескольких ЯП / An example of the Diffie - Hellman protocol working on several programming languages</h3>
+<p>Протокол Диффи-Хеллмана — это криптографический протокол, позволяющий двум и более сторонам получить общий секретный ключ, используя незащищенный от прослушивания канал связи. Полученный ключ используется для шифрования дальнейшего обмена с помощью алгоритмов симметричного шифрования.</p>
+<p>Работу данного алгоритма продемонстрирую на примере сокетов.</p>
+<p>Последовательность действий алгоритма довольно проста, поэтому не буду тут приводить пример на алгоритмическом языке, а просто опишу эту последовательность в виде списка.</p>
+<a class="details" href="https://github.com/tixset/DiffieHellmanProtocol">Подробнее / details</a>
+</div>
+</div>
+<div class="block">
+<div class="block-caption"><a href="https://github.com/tixset/VigenereCipher">VigenereCipher</a></div>
+<div class="block-description">
+<h3>Пример шифрования Виженера на нескольких ЯП / Example of Vigenere cipher in several programming languages</h3>
+<p>Шифрование по Виженеру представляет собой сложение блока открытого текста с ключом по модулю мощности алфавита.</p>
+<p>Когда-то давно у меня возникла необходимость передавать зашифрованную строку текста между сервером и клиентом.</p>
+<p>На просторах интернета я нашел простой пример шифрования Виженера написанный на Delphi неким программистом под ником "Danger".</p>
+<p>В связи с тем что на клиенте и сервере в моем случае была разная среда и использовались разные ЯП, пришлось переписать эту функцию...</p>
+<p>И вот уже сейчас я представляю Вам эту функцию переведенную на несколько ЯП.</p>
+<a class="details" href="https://github.com/tixset/VigenereCipher">Подробнее / details</a>
+</div>
+</div>
+</div>
+</body>
+</html>
