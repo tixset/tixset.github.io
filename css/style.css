@@ -64,19 +64,31 @@ html, body {
 #location {
 	margin-top: 20px;
 }
-#email {
+#email, #repo {
 	margin-top: 10px;
 }
-#email a {
+#repo .counter {
+	background-color: rgba(175,184,193,0.2);
+	margin-left: 4px;
+	padding: 0 6px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 18px;
+	border: 1px solid transparent;
+	border-radius: 2em;
+	box-sizing: border-box;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+#email a, #repo a {
 	text-decoration: none;
 	color: black;
 }
-#location, #email {
+#location, #email, #repo {
 	font-size: 14px;
 	white-space: nowrap;
 	text-align: -webkit-match-parent;
 }
-#location svg ,#email svg {
+#location svg ,#email svg, #repo svg {
 	margin-bottom: -3px;
 	color: #57606a;
 	fill: currentColor;
