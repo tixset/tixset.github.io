@@ -39,8 +39,8 @@ html, body {
 	margin-right: 20px;
 }
 #avatar {
-	width: 260px;
-	height: 260px;
+	width: 250px;
+	height: 250px;
 	border-radius: 50%;
 }
 #name, #welcome {
@@ -168,5 +168,29 @@ html, body {
 		position: absolute;
 		margin-left: 20px;
 		top: 20px;
+	}
+}
+@media (max-height: 640px) and (min-width: 720px) {
+	#avatar {
+		width: 70%;
+		height: 70%;
+	}
+	#name, #welcome {
+		font-size: 24px;
+	}
+	#nickname {
+		font-size: 18px;
+	}
+	#description {
+		font-size: 14px;
+	}
+	#location, #email, #repo {
+		font-size: 12px;
+	}
+}
+@media (max-height: 560px) and (min-width: 720px) {
+	#avatar {
+		width: 40%;
+		height: 40%;
 	}
 }
