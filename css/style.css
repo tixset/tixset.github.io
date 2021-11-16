@@ -1,7 +1,14 @@
+@font-face{
+	font-family: 'PTMonoRegular';
+	src: url('../font/PTMonoRegular.eot');
+	src: url('../font/PTMonoRegular.eot?#iefix') format('embedded-opentype'),
+	url('../font/PTMonoRegular.woff') format('woff'),
+	url('../font/PTMonoRegular.ttf') format('truetype');
+}
 * {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: "PTMonoRegular", "Open Sans", "Helvetica Neue", Helvetica;
 }
 html, body {
 	width: 100%;
@@ -38,10 +45,29 @@ html, body {
 	margin-left: 302px;
 	margin-right: 20px;
 }
+.translate {
+	float: right;
+	margin-top: -10px;
+	margin-right: -10px;
+	cursor: pointer;
+}
+.translate svg {
+	width: 35px;
+	height: 35px;
+	color: #24292f;
+	fill: currentColor;
+}
+.hide {
+	display: none;
+}
 #avatar {
 	width: 250px;
 	height: 250px;
 	border-radius: 50%;
+	transition: 0.8s ease-in;
+}
+#avatar:hover {
+	border-radius: 16px;
 }
 #name, #welcome {
 	font-size: 26px;
@@ -57,7 +83,7 @@ html, body {
 	color: #57606a;
 }
 #description {
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.5;
 	margin-top: 20px;
 }
@@ -96,6 +122,9 @@ html, body {
 #welcome {
 	margin-bottom: 10px;
 }
+.welcomeEn {
+	font-size: 20px!important;
+}
 #content .block {
 	border: 1px solid #d0d7de;
 	border-radius: 6px;
@@ -123,6 +152,9 @@ html, body {
 }
 #content .block .block-description h3 {
 	color: black;
+}
+#content .block .block-description p {
+	margin-bottom: 5px;
 }
 #content .block .block-description {
 	line-height: 1.8;
@@ -182,7 +214,7 @@ html, body {
 		font-size: 18px;
 	}
 	#description {
-		font-size: 14px;
+		font-size: 12px;
 	}
 	#location, #email, #repo {
 		font-size: 12px;

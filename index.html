@@ -12,22 +12,46 @@
 <title>tixset - GitHub</title>
 <meta name="viewport" content="width=device-width">
 <meta name="author" content="Zelenov Anton">
-<meta name="description" content="Приветствую Вас на моей страничке GitHub!"> 
-<meta name="Keywords" content="GitHub, tixset, Zelenov Anton, Russia, Serpukhov"> 
+<meta name="description" content="Моя страничка на GitHub Pages">
+<meta name="Keywords" content="GitHub, tixset, Zelenov Anton, Russia, Serpukhov">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tixset.github.io/">
+<meta property="og:description" content="Моя страничка на GitHub Pages">
+<meta property="og:title" content="tixset - GitHub">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.png">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(86248044, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
+<script>
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+	ym(86248044, "init", {
+		clickmap:true,
+		trackLinks:true,
+		accurateTrackBounce:true
+	});
+	window.onload = function() {
+		var translate = document.getElementsByClassName("translate");
+		for (var i = 0; i < translate.length; i++) {
+			translate[i].addEventListener("click", function(event) {
+				var id = event.currentTarget.id.split('-')[1];
+				var lang = event.currentTarget.lang;
+				if (lang == "en") {
+					event.currentTarget.lang = "ru";
+					var t1 = document.getElementById("text-" + id + "-ru");
+					var t2 = document.getElementById("text-" + id + "-en");
+				} else {
+					event.currentTarget.lang = "en";
+					var t1 = document.getElementById("text-" + id + "-en");
+					var t2 = document.getElementById("text-" + id + "-ru");
+				}
+				t1.classList.add("hide");
+				t2.classList.remove("hide");
+			});
+		}
+	}
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/86248044" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
@@ -67,21 +91,49 @@ Repositories
 </div>
 </div>
 <div id="content">
-<div id="welcome">Приветствую Вас на моей страничке GitHub! /<br>Welcome to my GitHub page!</div>
+<div id="welcome">Приветствую Вас на моей страничке GitHub!</div>
+<div id="welcome" class="welcomeEn">Welcome to my GitHub page!</div>
 <div class="block">
-<div class="block-caption"><a href="https://github.com/tixset/BlockChainTechnology">BlockChainTechnology</a></div>
-<div class="block-description">
-<h3>Пример простой реализации технологии Блокчейн на нескольких ЯП / An example of a simple implementation of Blockchain technology in several programming languages</h3>
+<div class="block-caption"><a href="https://github.com/tixset/BlockChainTechnology">BlockChainTechnology</a>
+<div id="translate-1" class="translate" lang="en">
+<svg version="1.0" viewBox="0 0 300.000000 300.000000">
+<g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" stroke="none">
+<path d="M905 2745 c-388 -72 -669 -440 -641 -840 27 -403 324 -715 713 -751 39 -4 96 -3 127 0 l56 7 0 232 -1 232 -59 43 -60 44 -68 -50 c-95 -70 -300 -182 -334 -182 -7 0 -48 81 -48 95 0 2 42 23 93 48 98 48 233 132 256 160 12 15 9 22 -21 55 -66 73 -158 230 -158 270 0 8 17 12 54 12 l53 0 45 -77 c25 -43 64 -98 87 -123 l41 -45 38 43 c71 79 146 225 159 308 l6 34 -347 0 -347 0 3 58 3 57 208 3 207 2 0 65 0 65 60 0 60 0 0 -65 0 -65 208 -2 207 -3 3 -57 3 -58 -75 0 -74 0 -7 -32 c-25 -128 -103 -288 -184 -380 -23 -25 -41 -50 -41 -55 0 -4 12 -16 25 -26 24 -17 26 -17 56 5 30 23 37 23 314 26 l284 3 7 56 c9 76 -2 234 -22 308 -107 400 -494 653 -889 580z"/>
+<path d="M1303 1705 c-65 -28 -63 -4 -63 -739 l0 -666 29 -32 29 -33 646 -3 c566 -2 650 -1 676 13 62 32 60 10 60 725 0 723 2 703 -65 734 -29 14 -109 16 -657 16 -508 -1 -629 -3 -655 -15z m732 -282 c6 -16 253 -668 311 -821 l24 -63 -66 3 -67 3 -46 130 -46 130 -184 0 -184 0 -46 -130 -46 -130 -62 -3 -62 -3 25 68 c44 118 302 797 309 816 6 14 19 17 70 17 51 0 64 -3 70 -17z"/>
+<path d="M1953 1295 c-31 -84 -133 -377 -133 -381 0 -2 65 -4 144 -4 l143 0 -67 193 c-37 105 -69 199 -72 207 -3 9 -8 4 -15 -15z"/>
+</g>
+</svg>
+</div>
+</div>
+<div class="block-description" id="text-1-ru">
+<h3>Пример простой реализации технологии Блокчейн на нескольких ЯП</h3>
 <p><i>Блокчейн — непрерывная последовательная цепочка блоков (связный список), содержащих информацию. Связь между блоками обеспечивается не только нумерацией, но и тем, что каждый блок содержит свою собственную хэш-сумму и хэш-сумму предыдущего блока.</i></p>
 <p>Таким образом если изменить данные какого-либо блока в цепочке то хэш-суммы последующих блоков перестанут быть валидными, что позволяет не допустить подмену данных в цепочке. Конечно же злоумышленник может перестроить все блоки в цепочке заново, для того чтобы этого не допустить, существуют децентрализованные базы данных в которых можно хранить копию нашей цепочки блоков и при необходимости сверять их.</p>
 <p>Но в данном примере я рассмотрю только построение цепочки блоков и ее верификацию, а так же предусмотрю функцию сравнения двух цепочек.</p>
-<a class="details" href="https://github.com/tixset/BlockChainTechnology">Подробнее / Details</a>
+<a class="details" href="https://github.com/tixset/BlockChainTechnology">Подробнее</a>
+</div>
+<div class="block-description hide" id="text-1-en">
+<h3>An example of a simple implementation of Blockchain technology in several programming languages</h3>
+<p><i>Blockchain is a continuous sequential chain of blocks (a connected list) containing information. The connection between the blocks is provided not only by numbering, but also by the fact that each block contains its own hash sum and the hash sum of the previous block.</i></p>
+<p>Thus, if you change the data of any block in the chain, the hash sums of subsequent blocks will cease to be valid, which prevents the substitution of data in the chain. Of course, an attacker can rebuild all the blocks in the chain anew, in order to prevent this, there are decentralized databases in which you can store a copy of our block chain and, if necessary, verify them.</p>
+<p>But in this example, I will consider only the construction of a block chain and its verification, as well as provide a function for comparing two chains.</p>
+<a class="details" href="https://github.com/tixset/BlockChainTechnology">Details</a>
 </div>
 </div>
 <div class="block">
-<div class="block-caption"><a href="https://github.com/tixset/encryptionWebChat">encryptionWebChat</a></div>
-<div class="block-description">
-<h3>Шифрованный Анонимный Веб-Чат / Encrypted Anonymous Web-Chat</h3>
+<div class="block-caption"><a href="https://github.com/tixset/encryptionWebChat">encryptionWebChat</a>
+<div id="translate-2" class="translate" lang="en">
+<svg version="1.0" viewBox="0 0 300.000000 300.000000">
+<g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" stroke="none">
+<path d="M905 2745 c-388 -72 -669 -440 -641 -840 27 -403 324 -715 713 -751 39 -4 96 -3 127 0 l56 7 0 232 -1 232 -59 43 -60 44 -68 -50 c-95 -70 -300 -182 -334 -182 -7 0 -48 81 -48 95 0 2 42 23 93 48 98 48 233 132 256 160 12 15 9 22 -21 55 -66 73 -158 230 -158 270 0 8 17 12 54 12 l53 0 45 -77 c25 -43 64 -98 87 -123 l41 -45 38 43 c71 79 146 225 159 308 l6 34 -347 0 -347 0 3 58 3 57 208 3 207 2 0 65 0 65 60 0 60 0 0 -65 0 -65 208 -2 207 -3 3 -57 3 -58 -75 0 -74 0 -7 -32 c-25 -128 -103 -288 -184 -380 -23 -25 -41 -50 -41 -55 0 -4 12 -16 25 -26 24 -17 26 -17 56 5 30 23 37 23 314 26 l284 3 7 56 c9 76 -2 234 -22 308 -107 400 -494 653 -889 580z"/>
+<path d="M1303 1705 c-65 -28 -63 -4 -63 -739 l0 -666 29 -32 29 -33 646 -3 c566 -2 650 -1 676 13 62 32 60 10 60 725 0 723 2 703 -65 734 -29 14 -109 16 -657 16 -508 -1 -629 -3 -655 -15z m732 -282 c6 -16 253 -668 311 -821 l24 -63 -66 3 -67 3 -46 130 -46 130 -184 0 -184 0 -46 -130 -46 -130 -62 -3 -62 -3 25 68 c44 118 302 797 309 816 6 14 19 17 70 17 51 0 64 -3 70 -17z"/>
+<path d="M1953 1295 c-31 -84 -133 -377 -133 -381 0 -2 65 -4 144 -4 l143 0 -67 193 c-37 105 -69 199 -72 207 -3 9 -8 4 -15 -15z"/>
+</g>
+</svg>
+</div>
+</div>
+<div class="block-description" id="text-2-ru">
+<h3>Шифрованный Анонимный Веб-Чат</h3>
 <p>Для демонстрации работы шифрования Виженера и протокола обмена ключами Диффи-Хеллмана решил написать простенький веб-чатик с сервером на сокете.</p>
 <p>Чат решено было сделать как можно более анонимным, для этого я отказался от бэкенда и решил в качестве сервера использовать сокет.</p>
 <p>Демка чата тут: <a target="_blank" href="http://185.98.86.127/encryptionWebChat/">http://185.98.86.127/encryptionWebChat/</a></p>
@@ -91,29 +143,78 @@ Repositories
 <p>Серверный скрипт не записывает ни куда ни какие данные, данные в нем находятся непосредственно в переменных, и при разрыве соединения уничтожаются.</p>
 <p>При этом из данных на сервере хранятся только хэши коннектов и список комнат.</p>
 <p>Имя пользователя для чата генерится рандомно, его можно сменить в дальнейшем на такое-же рандомное, для авторизации в чате достаточно только имени и названия комнаты.</p>
-<a class="details" href="https://github.com/tixset/encryptionWebChat">Подробнее / Details</a>
+<a class="details" href="https://github.com/tixset/encryptionWebChat">Подробнее</a>
+</div>
+<div class="block-description hide" id="text-2-en">
+<h3>Encrypted Anonymous Web-Chat</h3>
+<p>To demonstrate the work of the Vigenere Cipher and the Diffie-Hellman key exchange protocol, I decided to write a simple web chat with a server on a socket.</p>
+<p>It was decided to make the chat as anonymous as possible, for this I abandoned the backend and decided to use a socket as a server.</p>
+<p>The chat demo is here: <a target="_blank" href="http://185.98.86.127/encryptionWebChat/">http://185.98.86.127/encryptionWebChat/</a></p>
+<p>The chat does not use cookies or sessions, when the page is refrashed or closed, a logout occurs.</p>
+<p>Chat messages are encrypted using the Vision encryption, but system commands, such as the command to enter the room, are not encrypted.</p>
+<p>The server does not participate in the encryption process, the encryption algorithm is fully implemented on the client side (in the browser), the server sees only the encrypted text, and the Diffie-Hellman protocol does not allow the server to decrypt it.</p>
+<p>The server script does not write any data anywhere, the data in it is directly in variables, and when the connection is terminated, it is destroyed.</p>
+<p>At the same time, only hashes of connections and a list of rooms are stored on the server from the data.</p>
+<p>The username for the chat is generated randomly, it can be changed in the future to the same random one, only the name and the name of the room are enough for authorization in the chat.</p>
+<a class="details" href="https://github.com/tixset/encryptionWebChat">Details</a>
 </div>
 </div>
 <div class="block">
-<div class="block-caption"><a href="https://github.com/tixset/DiffieHellmanProtocol">DiffieHellmanProtocol</a></div>
-<div class="block-description">
-<h3>Пример работы протокола Диффи — Хеллмана на нескольких ЯП / An example of the Diffie - Hellman protocol working on several programming languages</h3>
+<div class="block-caption"><a href="https://github.com/tixset/DiffieHellmanProtocol">DiffieHellmanProtocol</a>
+<div id="translate-3" class="translate" lang="en">
+<svg version="1.0" viewBox="0 0 300.000000 300.000000">
+<g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" stroke="none">
+<path d="M905 2745 c-388 -72 -669 -440 -641 -840 27 -403 324 -715 713 -751 39 -4 96 -3 127 0 l56 7 0 232 -1 232 -59 43 -60 44 -68 -50 c-95 -70 -300 -182 -334 -182 -7 0 -48 81 -48 95 0 2 42 23 93 48 98 48 233 132 256 160 12 15 9 22 -21 55 -66 73 -158 230 -158 270 0 8 17 12 54 12 l53 0 45 -77 c25 -43 64 -98 87 -123 l41 -45 38 43 c71 79 146 225 159 308 l6 34 -347 0 -347 0 3 58 3 57 208 3 207 2 0 65 0 65 60 0 60 0 0 -65 0 -65 208 -2 207 -3 3 -57 3 -58 -75 0 -74 0 -7 -32 c-25 -128 -103 -288 -184 -380 -23 -25 -41 -50 -41 -55 0 -4 12 -16 25 -26 24 -17 26 -17 56 5 30 23 37 23 314 26 l284 3 7 56 c9 76 -2 234 -22 308 -107 400 -494 653 -889 580z"/>
+<path d="M1303 1705 c-65 -28 -63 -4 -63 -739 l0 -666 29 -32 29 -33 646 -3 c566 -2 650 -1 676 13 62 32 60 10 60 725 0 723 2 703 -65 734 -29 14 -109 16 -657 16 -508 -1 -629 -3 -655 -15z m732 -282 c6 -16 253 -668 311 -821 l24 -63 -66 3 -67 3 -46 130 -46 130 -184 0 -184 0 -46 -130 -46 -130 -62 -3 -62 -3 25 68 c44 118 302 797 309 816 6 14 19 17 70 17 51 0 64 -3 70 -17z"/>
+<path d="M1953 1295 c-31 -84 -133 -377 -133 -381 0 -2 65 -4 144 -4 l143 0 -67 193 c-37 105 -69 199 -72 207 -3 9 -8 4 -15 -15z"/>
+</g>
+</svg>
+</div>
+</div>
+<div class="block-description" id="text-3-ru">
+<h3>Пример работы протокола Диффи — Хеллмана на нескольких ЯП</h3>
 <p><i>Протокол Диффи-Хеллмана — это криптографический протокол, позволяющий двум и более сторонам получить общий секретный ключ, используя незащищенный от прослушивания канал связи. Полученный ключ используется для шифрования дальнейшего обмена с помощью алгоритмов симметричного шифрования.</i></p>
 <p>Работу данного алгоритма продемонстрирую на примере сокетов.</p>
 <p>Последовательность действий алгоритма довольно проста, поэтому не буду тут приводить пример на алгоритмическом языке, а просто опишу эту последовательность в виде списка.</p>
-<a class="details" href="https://github.com/tixset/DiffieHellmanProtocol">Подробнее / Details</a>
+<a class="details" href="https://github.com/tixset/DiffieHellmanProtocol">Подробнее</a>
+</div>
+<div class="block-description hide" id="text-3-en">
+<h3>An example of the Diffie - Hellman protocol working on several programming languages</h3>
+<p><i>The Diffie-Hellman Protocol is a cryptographic protocol that allows two or more parties to obtain a shared secret key using an unsecured communication channel. The received key is used to encrypt further exchange using symmetric encryption algorithms.</i></p>
+<p>I will demonstrate the work of this algorithm using the example of sockets.</p>
+<p>The sequence of actions of the algorithm is quite simple, so I will not give an example in algorithmic language here, but simply describe this sequence in the form of a list.</p>
+<a class="details" href="https://github.com/tixset/DiffieHellmanProtocol">Details</a>
 </div>
 </div>
 <div class="block">
-<div class="block-caption"><a href="https://github.com/tixset/VigenereCipher">VigenereCipher</a></div>
-<div class="block-description">
-<h3>Пример шифрования Виженера на нескольких ЯП / Example of Vigenere cipher in several programming languages</h3>
+<div class="block-caption"><a href="https://github.com/tixset/VigenereCipher">VigenereCipher</a>
+<div id="translate-4" class="translate" lang="en">
+<svg version="1.0" viewBox="0 0 300.000000 300.000000">
+<g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" stroke="none">
+<path d="M905 2745 c-388 -72 -669 -440 -641 -840 27 -403 324 -715 713 -751 39 -4 96 -3 127 0 l56 7 0 232 -1 232 -59 43 -60 44 -68 -50 c-95 -70 -300 -182 -334 -182 -7 0 -48 81 -48 95 0 2 42 23 93 48 98 48 233 132 256 160 12 15 9 22 -21 55 -66 73 -158 230 -158 270 0 8 17 12 54 12 l53 0 45 -77 c25 -43 64 -98 87 -123 l41 -45 38 43 c71 79 146 225 159 308 l6 34 -347 0 -347 0 3 58 3 57 208 3 207 2 0 65 0 65 60 0 60 0 0 -65 0 -65 208 -2 207 -3 3 -57 3 -58 -75 0 -74 0 -7 -32 c-25 -128 -103 -288 -184 -380 -23 -25 -41 -50 -41 -55 0 -4 12 -16 25 -26 24 -17 26 -17 56 5 30 23 37 23 314 26 l284 3 7 56 c9 76 -2 234 -22 308 -107 400 -494 653 -889 580z"/>
+<path d="M1303 1705 c-65 -28 -63 -4 -63 -739 l0 -666 29 -32 29 -33 646 -3 c566 -2 650 -1 676 13 62 32 60 10 60 725 0 723 2 703 -65 734 -29 14 -109 16 -657 16 -508 -1 -629 -3 -655 -15z m732 -282 c6 -16 253 -668 311 -821 l24 -63 -66 3 -67 3 -46 130 -46 130 -184 0 -184 0 -46 -130 -46 -130 -62 -3 -62 -3 25 68 c44 118 302 797 309 816 6 14 19 17 70 17 51 0 64 -3 70 -17z"/>
+<path d="M1953 1295 c-31 -84 -133 -377 -133 -381 0 -2 65 -4 144 -4 l143 0 -67 193 c-37 105 -69 199 -72 207 -3 9 -8 4 -15 -15z"/>
+</g>
+</svg>
+</div>
+</div>
+<div class="block-description" id="text-4-ru">
+<h3>Пример шифрования Виженера на нескольких ЯП</h3>
 <p><i>Шифрование по Виженеру представляет собой сложение блока открытого текста с ключом по модулю мощности алфавита.</i></p>
 <p>Когда-то давно у меня возникла необходимость передавать зашифрованную строку текста между сервером и клиентом.</p>
 <p>На просторах интернета я нашел простой пример шифрования Виженера написанный на Delphi неким программистом под ником "Danger".</p>
 <p>В связи с тем что на клиенте и сервере в моем случае была разная среда и использовались разные ЯП, пришлось переписать эту функцию...</p>
 <p>И вот уже сейчас я представляю Вам эту функцию переведенную на несколько ЯП.</p>
-<a class="details" href="https://github.com/tixset/VigenereCipher">Подробнее / Details</a>
+<a class="details" href="https://github.com/tixset/VigenereCipher">Подробнее</a>
+</div>
+<div class="block-description hide" id="text-4-en">
+<h3>Example of Vigenere cipher in several programming languages</h3>
+<p><i>Vigenere cipher is the addition of a block of plaintext with a key modulo the power of the alphabet.</i></p>
+<p>Once upon a time, I had the need to transfer an encrypted string of text between the server and the client.</p>
+<p>On the Internet, I found a simple example of a Vision encryption written in Delphi by a programmer with the nickname "Danger".</p>
+<p>Due to the fact that the client and server in my case had a different environment and used different programming languages, I had to rewrite this function...</p>
+<p>And now I present to you this function translated into several programming languages.</p>
+<a class="details" href="https://github.com/tixset/VigenereCipher">Details</a>
 </div>
 </div>
 </div>
